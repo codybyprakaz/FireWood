@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en"  class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewood Sekuwa N Thakali</title>
+
+    <script>
+  tailwind.config = {
+    darkMode: "class"
+  }
+</script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+     <!-- <link rel="stylesheet" href="./style.css"> -->
+
+     <style>
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.heading-font{
+    font-family: 'Playfair Display', serif;
+}
+</style>
+
+</head>
+
+<body class="bg-black">
+
+<!-- navbar -->
+<header id="navbar"
+class="fixed top-0 left-0 w-full z-50 
+bg-white/70 dark:bg-black/30 
+backdrop-blur-md 
+border-b border-black/10 dark:border-white/10 
+transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- LOGO -->
+        <a href="#" class="flex items-center gap-4">
+
+            <div class="text-4xl">🔥</div>
+
+            <div id="logoText" class="flex flex-col leading-none">
+                <h2 class="text-2xl font-bold text-amber-500">FIREWOOD</h2>
+                <span class="text-[10px] tracking-[5px] text-white/80">
+                    SEKUWA N THAKALI
+                </span>
+            </div>
+
+        </a>
+
+        <!-- NAV (DESKTOP) -->
+        <nav id="navLinks" aria-label="Primary navigation"
+            class="hidden lg:flex items-center gap-10 text-white text-sm">
+
+            <a href="#" class="hover:text-amber-400 transition">Home</a>
+            <a href="#" class="hover:text-amber-400 transition">About</a>
+            <a href="#" class="hover:text-amber-400 transition">Menu</a>
+            <a href="#" class="hover:text-amber-400 transition">Gallery</a>
+            <a href="#" class="hover:text-amber-400 transition">Contact</a>
+
+        </nav>
+
+        <!-- RIGHT SIDE (CTA + TOGGLE) -->
+        <div class="flex items-center gap-4">
+
+            <!-- Reserve Table (DESKTOP ONLY) -->
+            <a id="ctaBtn" href="#"
+   class="hidden lg:inline-flex bg-amber-500 px-6 py-3 rounded-full text-black font-semibold hover:bg-amber-400 transition">
+                Reserve Table
+            </a>
+
+            <button id="themeToggle"
+    class="text-white text-2xl lg:inline-flex hover:text-amber-400 transition">
+    🌙
+</button>
+
+            <!-- MOBILE MENU TOGGLE -->
+            <button id="menuToggle"
+                class="lg:hidden text-white text-3xl focus:outline-none">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MOBILE MENU (hidden by default, for later JS toggle) -->
+    <div id="mobileMenu"
+         class="hidden lg:hidden bg-black/90 backdrop-blur-md px-6 py-6 space-y-4 text-white">
+
+        <a href="#" class="block hover:text-amber-400">Home</a>
+        <a href="#" class="block hover:text-amber-400">About</a>
+        <a href="#" class="block hover:text-amber-400">Menu</a>
+        <a href="#" class="block hover:text-amber-400">Gallery</a>
+        <a href="#" class="block hover:text-amber-400">Contact</a>
+
+        <a href="#"
+           class="inline-block mt-4 bg-amber-500 px-6 py-3 rounded-full text-black font-semibold">
+            Reserve Table
+        </a>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+
+    <!-- Luxury Glow -->
+<div
+class="
+absolute
+top-1/2
+left-1/2
+-translate-x-1/2
+-translate-y-1/2
+w-[900px]
+h-[900px]
+bg-gradient-to-r
+from-amber-500/20
+to-orange-500/20
+blur-[220px]
+rounded-full
+pointer-events-none">
+</div>
+
+<div
+class="
+absolute
+top-32
+right-20
+w-64
+h-64
+bg-orange-500/10
+blur-[120px]
+rounded-full">
+</div>
+
+<div
+class="
+absolute
+bottom-20
+left-10
+w-48
+h-48
+bg-amber-500/10
+blur-[100px]
+rounded-full">
+</div>
+
+    <div class="max-w-7xl mx-auto px-6 w-full">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT -->
+            <div>
+
+                <p class="text-amber-400 uppercase tracking-[4px] mb-6">
+                    Authentic Firewood Flavors
+                </p>
+
+<h1
+class="
+bg-gradient-to-r
+from-white
+via-amber-100
+to-amber-400
+bg-clip-text
+text-transparent
+text-6xl
+md:text-8xl
+font-black
+leading-[0.95]
+">
+
+    Firewood <br>
+    Sekuwa N <br>
+    Thakali
+
+</h1>
+
+                <p class="text-gray-300 text-lg mt-8 max-w-xl leading-relaxed">
+
+                    Experience Nepal's finest firewood grilled sekuwa,
+                    authentic Thakali cuisine and warm hospitality in a
+                    premium dining atmosphere.
+
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-10">
+
+                    <a href="#"
+                       class="px-8
+py-4
+rounded-full
+font-semibold
+bg-gradient-to-r
+from-amber-400
+to-orange-500
+text-black
+shadow-lg
+shadow-amber-500/30
+hover:scale-105
+transition-all
+duration-300">
+
+                        View Menu
+
+                    </a>
+
+                    <a href="#"
+                       class="border border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-full transition">
+
+                        Reserve Table
+
+                    </a>
+
+                </div>
+
+                <!-- Customers -->
+                 <div
+class="
+mt-8
+inline-flex
+items-center
+gap-3
+bg-white/5
+backdrop-blur-md
+border
+border-white/10
+rounded-full
+px-5
+py-3">
+
+    <span class="text-amber-400 text-xl">
+        ★
+    </span>
+
+    <span class="text-white text-sm">
+        Kathmandu's Favorite Sekuwa Experience
+    </span>
+
+</div>
+
+                <!-- <div class="flex items-center gap-5 mt-12">
+
+                    <div class="flex -space-x-4">
+
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg"
+                             class="w-12 h-12 rounded-full border-2 border-white">
+
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg"
+                             class="w-12 h-12 rounded-full border-2 border-white">
+
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg"
+                             class="w-12 h-12 rounded-full border-2 border-white">
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="text-amber-400 font-bold text-xl">
+                            5000+
+                        </h4>
+
+                        <p class="text-gray-300">
+                            Happy Customers
+                        </p>
+
+                    </div>
+
+                </div> -->
+
+    <div class="flex gap-10 mt-12">
+
+    <div>
+        <h3 class="text-3xl font-bold text-amber-400">
+            4.8★
+        </h3>
+
+        <p class="text-gray-400">
+            Google Rating
+        </p>
+    </div>
+
+    <div>
+        <h3 class="text-3xl font-bold text-amber-400">
+            5000+
+        </h3>
+
+        <p class="text-gray-400">
+            Guests Served
+        </p>
+    </div>
+
+</div>
+</div>
+
+            <!-- RIGHT -->
+
+            <div class="relative">
+
+                <div
+class="
+absolute
+-top-12
+-right-12
+w-72
+h-72
+border
+border-amber-500/20
+rounded-full">
+</div>
+
+<div
+class="
+absolute
+bottom-0
+-left-12
+w-40
+h-40
+bg-amber-500/20
+blur-3xl
+rounded-full">
+</div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=2070"
+                    class="
+rounded-[32px]
+shadow-[0_30px_80px_rgba(245,158,11,0.25)]
+w-full
+hover:scale-[1.02]
+transition
+duration-700"
+                    alt="Sekuwa">
+
+                <!-- Rating Card -->
+
+                <div class="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md border border-amber-500/30 rounded-3xl p-6">
+    <h3 class="text-3xl font-bold text-amber-400">15K+</h3>
+    <p class="text-gray-300 text-sm">Happy Customers</p>
+</div>
+
+                <div class="absolute top-8 right-8 bg-black/80 backdrop-blur-md border border-amber-500/30 rounded-3xl p-6">
+
+                    <p class="text-amber-400 text-xl">
+                        ★★★★★
+                    </p>
+
+                    <h3 class="text-white text-4xl font-bold mt-2">
+                        4.8
+                    </h3>
+
+                    <p class="text-gray-300">
+                        Rated by 2000+ Customers
+                    </p>
+
+                </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+<!-- Scroll Indicator -->
+<div
+class="
+absolute
+bottom-8
+left-1/2
+-translate-x-1/2">
+
+    <div
+    class="
+    w-7
+    h-12
+    border
+    border-white/30
+    rounded-full
+    flex
+    justify-center">
+
+        <div
+        class="
+        w-1.5
+        h-3
+        bg-amber-400
+        rounded-full
+        mt-2
+        animate-bounce">
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="bg-[#111111] py-12">
+
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+            <div>
+                <h2 class="text-4xl font-bold text-amber-500">
+                    5000+
+                </h2>
+
+                <p class="text-gray-300 mt-2">
+                    Happy Customers
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-amber-500">
+                    10+
+                </h2>
+
+                <p class="text-gray-300 mt-2">
+                    Years Experience
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-amber-500">
+                    4.8★
+                </h2>
+
+                <p class="text-gray-300 mt-2">
+                    Google Rating
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-amber-500">
+                    100%
+                </h2>
+
+                <p class="text-gray-300 mt-2">
+                    Fresh Ingredients
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-24 bg-[#faf7f2]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="text-amber-600 uppercase tracking-[4px]">
+                Our Signature Dishes
+            </span>
+
+            <h2 class="heading-font text-5xl text-gray-900 mt-4">
+                From Firewood To Your Table
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card -->
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=1200"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="heading-font text-2xl mb-3">
+                        Buff Sekuwa
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Tender buffalo meat marinated with traditional spices and grilled over firewood.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="heading-font text-2xl mb-3">
+                        Chicken Sekuwa
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Juicy chicken grilled slowly over natural firewood for rich smoky flavor.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200"
+                    class="h-64 w-full object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="heading-font text-2xl mb-3">
+                        Thakali Set
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Complete Thakali meal with rice, dal, vegetables, achar and meat.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-black py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-20">
+
+            <span class="text-amber-500 uppercase tracking-[4px]">
+                Why Choose Us
+            </span>
+
+            <h2 class="heading-font text-white text-5xl mt-4">
+                Tradition. Quality. Experience.
+            </h2>
+
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10">
+
+            <div class="border border-white/10 p-10 rounded-3xl">
+
+                <div class="text-5xl mb-6">
+                    🔥
+                </div>
+
+                <h3 class="text-white text-2xl mb-4">
+                    Firewood Grilling
+                </h3>
+
+                <p class="text-gray-400">
+                    Authentic smoky flavor from natural firewood cooking.
+                </p>
+
+            </div>
+
+            <div class="border border-white/10 p-10 rounded-3xl">
+
+                <div class="text-5xl mb-6">
+                    🍲
+                </div>
+
+                <h3 class="text-white text-2xl mb-4">
+                    Traditional Recipes
+                </h3>
+
+                <p class="text-gray-400">
+                    Recipes passed down through generations.
+                </p>
+
+            </div>
+
+            <div class="border border-white/10 p-10 rounded-3xl">
+
+                <div class="text-5xl mb-6">
+                    🌿
+                </div>
+
+                <h3 class="text-white text-2xl mb-4">
+                    Fresh Ingredients
+                </h3>
+
+                <p class="text-gray-400">
+                    Locally sourced ingredients prepared daily.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="relative bg-[#0f0f0f] py-24 overflow-hidden">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-amber-500/10 blur-[140px] rounded-full"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/10 blur-[140px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- IMAGE SIDE -->
+
+            <!-- RIGHT -->
+
+<div class="relative">
+
+    <div
+class="
+absolute
+-top-12
+-right-12
+w-72
+h-72
+border
+border-amber-500/20
+rounded-full
+z-0">
+</div>
+
+<div
+class="
+absolute
+bottom-0
+-left-12
+w-40
+h-40
+bg-amber-500/20
+blur-3xl
+rounded-full
+z-0">
+</div>
+
+    <!-- Floating Badge -->
+    <div class="absolute -top-6 -left-6 z-20
+        bg-black/80
+        backdrop-blur-md
+        border border-amber-500/30
+        rounded-2xl
+        px-6 py-4">
+
+        <p class="text-amber-400 text-sm uppercase tracking-[2px]">
+            Since 2015
+        </p>
+
+        <h3 class="text-white font-bold">
+            Authentic Firewood Taste
+        </h3>
+
+    </div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600"
+                    alt="Restaurant Interior"
+                    class="rounded-[30px] w-full h-[650px] object-cover">
+
+                <!-- Floating Experience Card -->
+
+                <div class="absolute bottom-8 left-8 bg-white p-8 rounded-3xl shadow-2xl">
+
+                    <h3 class="text-5xl font-bold text-amber-600">
+                        10+
+                    </h3>
+
+                    <p class="text-gray-700 mt-2">
+                        Years of Serving <br>
+                        Authentic Flavors
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT SIDE -->
+
+            <div>
+
+                <span class="text-amber-500 uppercase tracking-[4px]">
+                    About Firewood
+                </span>
+
+                <h2 class="heading-font text-white text-5xl lg:text-6xl mt-6 leading-tight">
+
+                    Where Tradition
+                    Meets Taste
+
+                </h2>
+
+                <p class="text-gray-400 text-lg leading-relaxed mt-8">
+
+                    Firewood Sekuwa N Thakali is more than just a restaurant.
+                    We bring together authentic Nepalese flavors, traditional
+                    cooking techniques, and modern hospitality to create an
+                    unforgettable dining experience.
+
+                </p>
+
+                <p class="text-gray-400 text-lg leading-relaxed mt-6">
+
+                    Every dish is prepared using carefully selected ingredients
+                    and grilled over natural firewood, delivering the smoky
+                    flavor that makes our sekuwa truly special.
+
+                </p>
+
+                <!-- FEATURES -->
+
+                <div class="grid md:grid-cols-2 gap-5 mt-10">
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+
+                        <span class="text-white">
+                            Authentic Recipes
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+
+                        <span class="text-white">
+                            Premium Ingredients
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+
+                        <span class="text-white">
+                            Firewood Grilled
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+
+                        <span class="text-white">
+                            Family Friendly
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div class="flex flex-wrap gap-5 mt-12">
+
+                    <a href="#"
+                       class="bg-amber-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-amber-600 transition">
+
+                        Explore Menu
+
+                    </a>
+
+                    <a href="#"
+                       class="border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+
+                        Reserve Table
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="relative bg-black py-28 overflow-hidden">
+
+    <!-- Luxury Glow -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-amber-500/10 blur-[140px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/10 blur-[140px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- IMAGE SIDE -->
+            <div class="relative">
+
+                <!-- Decorative Circle -->
+                <div class="absolute -top-10 -left-10 w-40 h-40 border border-amber-500/20 rounded-full"></div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=1600"
+                    alt="Chef"
+                    class="rounded-[32px] w-full h-[650px] object-cover shadow-[0_30px_80px_rgba(245,158,11,0.2)]">
+
+                <!-- Floating Card -->
+                <div class="absolute bottom-8 left-8
+                    bg-black/80
+                    backdrop-blur-md
+                    border border-amber-500/30
+                    rounded-3xl
+                    p-6">
+
+                    <h3 class="text-4xl font-bold text-amber-400">
+                        10+
+                    </h3>
+
+                    <p class="text-gray-300">
+                        Years of Culinary Excellence
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT SIDE -->
+            <div>
+
+                <span class="text-amber-500 uppercase tracking-[4px]">
+                    Meet Our Chef
+                </span>
+
+                <h2 class="heading-font text-white text-5xl lg:text-6xl mt-6 leading-tight">
+                    Bringing Tradition
+                    To Every Plate
+                </h2>
+
+                <p class="text-gray-400 text-lg leading-relaxed mt-8">
+                    Our culinary team combines authentic Nepalese cooking
+                    techniques with carefully selected ingredients to create
+                    dishes that honor tradition while delighting modern tastes.
+                </p>
+
+                <p class="text-gray-400 text-lg leading-relaxed mt-6">
+                    Every Sekuwa is grilled over natural firewood, preserving
+                    the smoky flavor that has made Nepalese cuisine famous
+                    for generations.
+                </p>
+
+                <!-- Features -->
+                <div class="grid md:grid-cols-2 gap-5 mt-10">
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+                        <span class="text-white">
+                            Authentic Recipes
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+                        <span class="text-white">
+                            Firewood Grilling
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+                        <span class="text-white">
+                            Premium Ingredients
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold">
+                            ✓
+                        </div>
+                        <span class="text-white">
+                            Traditional Expertise
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Chef Info -->
+                <div class="mt-12 border-l-2 border-amber-500 pl-6">
+
+                    <h3 class="text-white text-2xl font-semibold">
+                        Chef Ram Thapa
+                    </h3>
+
+                    <p class="text-amber-400 mt-1">
+                        Executive Chef
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-[#faf7f2] py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="text-amber-600 uppercase tracking-[4px]">
+                Testimonials
+            </span>
+
+            <h2 class="heading-font text-5xl mt-5">
+                What Our Guests Say
+            </h2>
+
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-[30px] p-8 shadow-lg">
+
+                <div class="text-amber-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 mb-6">
+                    Best Sekuwa I've ever had. Amazing smoky flavor and excellent service.
+                </p>
+
+                <h4 class="font-semibold">
+                    Suman Sharma
+                </h4>
+
+            </div>
+
+            <div class="bg-white rounded-[30px] p-8 shadow-lg">
+
+                <div class="text-amber-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 mb-6">
+                    Authentic Thakali food and beautiful atmosphere. Highly recommended.
+                </p>
+
+                <h4 class="font-semibold">
+                    Priya Karki
+                </h4>
+
+            </div>
+
+            <div class="bg-white rounded-[30px] p-8 shadow-lg">
+
+                <div class="text-amber-500 text-2xl mb-4">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 mb-6">
+                    Great food, friendly staff, and a premium dining experience.
+                </p>
+
+                <h4 class="font-semibold">
+                    Rajesh Shrestha
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-black py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="text-amber-500 uppercase tracking-[4px]">
+                Gallery
+            </span>
+
+            <h2 class="heading-font text-white text-5xl mt-5">
+                Experience The Atmosphere
+            </h2>
+
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200"
+                 class="rounded-3xl h-80 object-cover w-full">
+
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200"
+                 class="rounded-3xl h-80 object-cover w-full">
+
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=1200"
+                 class="rounded-3xl h-80 object-cover w-full">
+
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200"
+                 class="rounded-3xl h-80 object-cover w-full">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="relative py-32">
+
+    <div class="absolute inset-0">
+
+        <img
+            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000"
+            class="w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/75"></div>
+
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-6">
+
+        <div class="bg-white rounded-[40px] p-10 lg:p-16">
+
+            <div class="text-center mb-10">
+
+                <span class="text-amber-600 uppercase tracking-[4px]">
+                    Reservation
+                </span>
+
+                <h2 class="heading-font text-5xl mt-4">
+                    Book Your Table
+                </h2>
+
+            </div>
+
+            <form class="grid lg:grid-cols-2 gap-6">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="border rounded-xl px-5 py-4">
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="border rounded-xl px-5 py-4">
+
+                <input
+                    type="date"
+                    class="border rounded-xl px-5 py-4">
+
+                <input
+                    type="time"
+                    class="border rounded-xl px-5 py-4">
+
+                <select
+                    class="border rounded-xl px-5 py-4">
+
+                    <option>1 Person</option>
+                    <option>2 Persons</option>
+                    <option>4 Persons</option>
+                    <option>6 Persons</option>
+
+                </select>
+
+                <button
+                    class="bg-amber-500 hover:bg-amber-600 text-black rounded-xl font-semibold">
+
+                    Reserve Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="bg-[#0a0a0a] text-white pt-24 pb-10">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-4 gap-10">
+
+            <div>
+
+                <h2 class="heading-font text-3xl text-amber-500">
+                    FIREWOOD
+                </h2>
+
+                <p class="text-gray-400 mt-5">
+                    Authentic Sekuwa & Thakali dining experience with premium hospitality.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-xl mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-xl mb-5">
+                    Opening Hours
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+
+                    <li>Sun - Fri</li>
+                    <li>10:00 AM - 10:00 PM</li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-xl mb-5">
+                    Contact
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+
+                    <li>📍 Kathmandu, Nepal</li>
+                    <li>📞 +977 XXXXXXXX</li>
+                    <li>✉️ info@firewood.com</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/10 mt-16 pt-8 text-center text-gray-500">
+
+            © 2026 Firewood Sekuwa N Thakali. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JS -->
+<script>
+let lastScroll = 0;
+
+const navbar = document.getElementById("navbar");
+const logoText = document.getElementById("logoText");
+const navLinks = document.getElementById("navLinks");
+const ctaBtn = document.getElementById("ctaBtn");
+
+const menuBtn = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+/* MOBILE MENU TOGGLE */
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+}
+
+/* SCROLL BEHAVIOR */
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 80 && currentScroll > lastScroll) {
+
+        // SCROLL DOWN → minimal navbar
+        if (logoText) logoText.style.transform = "scale(0.9)";
+        if (navLinks) navLinks.style.opacity = "0";
+        if (ctaBtn) ctaBtn.style.opacity = "0";
+
+    } else {
+
+        // SCROLL UP → full navbar
+        if (logoText) logoText.style.transform = "scale(1)";
+        if (navLinks) navLinks.style.opacity = "1";
+        if (ctaBtn) ctaBtn.style.opacity = "1";
+    }
+
+    lastScroll = currentScroll;
+});
+
+
+// dark mode
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+    document.documentElement.classList.remove("dark");
+} else {
+    document.documentElement.classList.add("dark");
+}
+
+const themeToggle = document.getElementById("themeToggle");
+const html = document.documentElement;
+
+themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+
+    if (html.classList.contains("dark")) {
+        themeToggle.textContent = "🌙"; // dark mode ON icon
+        localStorage.setItem("theme", "dark");
+    } else {
+        themeToggle.textContent = "☀️"; // light mode ON icon
+        localStorage.setItem("theme", "light");
+    }
+});
+
+/* Load saved theme */
+if (localStorage.getItem("theme") === "light") {
+    html.classList.remove("dark");
+    themeToggle.textContent = "☀️";
+}
+</script>
+</body>
+</html>
