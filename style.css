@@ -6,3 +6,47 @@ body{
 .heading-font{
     font-family: 'Playfair Display', serif;
 }
+
+
+.nav-link{
+    position:relative;
+    transition:all .6s ease;
+}
+
+.nav-link:hover{
+    color:#f59e0b;
+}
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:2px;
+    background:#f59e0b;
+    transition:width .6s ease;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
